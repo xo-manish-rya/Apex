@@ -195,7 +195,7 @@ function ServiceRow({ service }: { service: ServiceItem }) {
   );
 }
 
-export function ServicesIndex() {
+const ServicesIndex = () => {
   return (
     <section id="services" className="px-6 py-24 sm:px-8">
       <div className="mx-auto max-w-[1180px]">
@@ -217,4 +217,6 @@ export function ServicesIndex() {
       </div>
     </section>
   );
-}
+};
+
+export default ServicesIndex;

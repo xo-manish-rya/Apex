@@ -1,3 +1,4 @@
+"use client";
 interface DifferentiatorCard {
   index: string;
   title: string;
