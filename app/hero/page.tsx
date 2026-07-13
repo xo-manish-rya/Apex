@@ -37,7 +37,7 @@ function renderCallToAction(cta: CallToAction, index: number) {
   );
 }
 
-export function HeroSection() {
+export default function HeroSection() {
   const gradientFrom = "#FF5A3C"; // Ember Coral
   const gradientTo = "#FFB020"; // Amber
 

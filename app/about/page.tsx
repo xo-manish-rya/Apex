@@ -82,7 +82,7 @@ function DifferentiatorCard({ card }: { card: DifferentiatorCard }) {
   );
 }
 
-export function AboutDifferentiators() {
+export default function AboutDifferentiators() {
   return (
     <section className="px-6 py-24 sm:px-8">
       <div className="mx-auto mb-14 max-w-[1180px]">

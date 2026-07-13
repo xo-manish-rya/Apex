@@ -150,7 +150,7 @@ function CaseStudyBlock({ study, index }: { study: CaseStudy; index: number }) {
   );
 }
 
-export function ResultsShowcase() {
+export default function ResultsShowcase() {
   return (
     <section id="results" className="px-6 py-24 sm:px-8">
       <div className="mx-auto max-w-[1180px]">

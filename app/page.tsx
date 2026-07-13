@@ -1,9 +1,9 @@
 import React from "react";
-import { HeroSection } from "./hero/page";
+import HeroSection from "./hero/page";
 import Service from "./services/page";
 import { SeamGlow } from "@/components/Layout/SeamGlow/SeamGlow";
-import { ResultsShowcase } from "./result/page";
-import { AboutDifferentiators } from "./about/page";
+import ResultsShowcase from "./result/page";
+import AboutDifferentiators from "./about/page";
 
 const page = () => {
   const gradientFrom = "#FF5A3C"; // Ember Coral
