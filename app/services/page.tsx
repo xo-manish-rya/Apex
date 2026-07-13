@@ -1,7 +1,7 @@
 "use client";
+import React from "react";
 
 import ServicesIndex from "@/components/Layout/ServiceIndex/ServiceIndex";
-import React from "react";
 
 const Service = () => {
   return (
