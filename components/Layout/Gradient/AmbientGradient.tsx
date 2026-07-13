@@ -1,16 +1,29 @@
-import React from "react";
-import { HeroSection } from "./hero/page";
-import Service from "./services/page";
-import { SeamGlow } from "@/components/Layout/SeamGlow/SeamGlow";
-import { ResultsShowcase } from "./result/page";
-import { AboutDifferentiators } from "./about/page";
+"use client";
 
-const page = () => {
+interface AmbientBackgroundProps {
+  from?: string;
+  to?: string;
+}
+
+/**
+ * Renders once in app/layout.tsx, sits fixed behind the entire app.
+ * Because it's `fixed` (not `absolute` inside a section), it never scrolls
+ * and there's no per-section container edge for the blur to be clipped
+ * against — so no hard seams between Hero -> ProofBento -> ServicesGrid etc.
+ */
+export function AmbientBackground({
+  from = "#FF5A3C", // Ember Coral
+  to = "#FFB020", // Amber
+}: AmbientBackgroundProps) {
   const gradientFrom = "#FF5A3C"; // Ember Coral
-  const gradientTo = "#FFB020";
+  const gradientTo = "#FFB020"; // Amber
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
-      {/* Top gradient background */}
+    <div
+      aria-hidden="true"
+      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-[#0B0E12]"
+    >
+      {/* top-left glow */}
+
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 min-h-screen"
@@ -25,7 +38,7 @@ const page = () => {
         />
       </div>
 
-      {/* Bottom gradient background */}
+      {/* secondary glow, offset lower/right, keeps it from reading as one flat symmetrical blob */}
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)] min-h-screen"
@@ -39,14 +52,6 @@ const page = () => {
           className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem] min-h-screen"
         />
       </div>
-
-      <HeroSection />
-      {/* <SeamGlow /> */}
-      <Service />
-      <ResultsShowcase />
-      <AboutDifferentiators />
     </div>
   );
-};
-
-export default page;
+}

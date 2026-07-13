@@ -1,15 +1,37 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import localFont from "next/font/local";
+import { LenisProvider } from "@/components/providers/lenis-provider";
+import "lenis/dist/lenis.css";
+import { AmbientBackground } from "@/components/Layout/Gradient/AmbientGradient";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
   subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-manrope",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const neueMachina = localFont({
+  src: [
+    {
+      path: "../public/fonts/NeueMachina-Light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/NeueMachina-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/NeueMachina-Ultrabold.otf",
+      weight: "800",
+      style: "normal",
+    },
+  ],
+  variable: "--font-neue-machina",
 });
 
 export const metadata: Metadata = {
@@ -24,10 +46,18 @@ export default function RootLayout({
 }>) {
   return (
     <html
+      suppressHydrationWarning
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={cn(
+        "h-full dark lenis lenis-smooth",
+        manrope.className,
+        neueMachina.variable,
+      )}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {/* <AmbientBackground /> */}
+        <LenisProvider>{children}</LenisProvider>
+      </body>
     </html>
   );
 }
