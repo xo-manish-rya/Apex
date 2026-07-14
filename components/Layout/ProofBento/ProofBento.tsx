@@ -91,7 +91,7 @@ export function ProofBento() {
               <span className="flex h-6 w-6 items-center justify-center rounded-lg text-[#22D6EE]">
                 <img src="/Arrow.svg" alt="" />
               </span>
-              <span className="font-manrope text-4xl sm:text-5xl font-[300] text-[#F5F7FA]">
+              <span className="font-manrope text-4xl sm:text-5xl font-[500] sm:font-[500] md:font-[300] text-[#F5F7FA]">
                 40+
               </span>
             </div>
@@ -109,7 +109,7 @@ export function ProofBento() {
               <span className="flex h-7 w-7 items-center justify-center rounded-lg ">
                 <img src="/Star.svg" alt="" />
               </span>
-              <span className="font-manrope text-4xl sm:text-5xl font-[300] text-[#F5F7FA]">
+              <span className="font-manrope text-4xl sm:text-5xl font-[500] sm:font-[500] md:font-[300] text-[#F5F7FA]">
                 4.8x
               </span>
             </div>
