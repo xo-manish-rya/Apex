@@ -109,7 +109,7 @@ function CaseStudyBlock({ study, index }: { study: CaseStudy; index: number }) {
   return (
     <div
       ref={blockRef}
-      className={`flex flex-col gap-12 border-t border-white/[0.08] py-24 sm:gap-16 sm:py-32 lg:flex-row lg:gap-24 ${
+      className={`flex flex-col gap-12 border-t border-white/[0.08] py-24 sm:gap-16 sm:py-12 lg:flex-row lg:gap-24 ${
         isReversed ? "lg:flex-row-reverse" : ""
       }`}
     >
@@ -152,7 +152,7 @@ function CaseStudyBlock({ study, index }: { study: CaseStudy; index: number }) {
 
 export default function ResultsShowcase() {
   return (
-    <section id="results" className="px-6 py-24 sm:px-8">
+    <section id="results" className="px-6 sm:py-12 md:py-14 sm:px-8">
       <div className="mx-auto max-w-[1180px]">
         <div className="mb-4 max-w-[640px]">
           {/* <span className="mb-3 inline-block font-mono text-xs font-bold uppercase tracking-[0.14em] text-[#22D6EE]">

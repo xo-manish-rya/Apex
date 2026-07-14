@@ -3,6 +3,7 @@ import HeroSection from "./hero/page";
 import Service from "./services/page";
 import ResultsShowcase from "./result/page";
 import AboutDifferentiators from "./about/page";
+import HowWeWork from "./process/page";
 
 const page = () => {
   const gradientFrom = "#FF5A3C"; // Ember Coral
@@ -43,6 +44,7 @@ const page = () => {
       <Service />
       <ResultsShowcase />
       <AboutDifferentiators />
+      <HowWeWork />
     </div>
   );
 };

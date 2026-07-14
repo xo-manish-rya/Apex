@@ -41,12 +41,12 @@ export function ProofBento() {
   const { value: adSpend, ref: adSpendRef } = useCountUp(210, 1800); // renders as ₹2.10Cr+
 
   return (
-    <section className="px-6 pt-20 md:pb-20 mt-32 sm:px-8">
+    <section className="px-6 pt-20 md:pb-20 mt-10 md:mt-32 sm:px-8">
       <div className="mx-auto max-w-[1180px] rounded-[28px] border border-white/[0.06] p-3 sm:p-4">
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-[1fr_1fr_1.05fr] lg:grid-rows-[auto_auto] sm:gap-4">
           {/* left feature card — glowing orb, spans both rows */}
           <div className="relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#10141B] p-7 lg:col-start-1 lg:row-start-1 lg:row-span-2">
-            <h3 className="relative z-10 text-[2.5rem] font-manrope font-[300] leading-[1.05] text-[#F5F7FA]">
+            <h3 className="relative z-10 text-[2rem] sm:text-[2.5rem] font-manrope font-[600] md:font-[500] leading-[1.05] text-[#F5F7FA]">
               Book Your
               <br />
               Growth Audit
@@ -75,7 +75,7 @@ export function ProofBento() {
             {/* huge cropped counter number, signature move */}
             <div
               ref={adSpendRef}
-              className="relative z-0 -mb-4 mt-4 select-none text-center font-manrope text-[4rem] font-[800] leading-none text-[#F5F7FA]/25 sm:text-[76px]"
+              className="relative z-0 -mb-4 mt-4 select-none text-center font-manrope text-[3.2rem] font-[800] leading-none text-[#F5F7FA]/25 sm:text-[4rem]"
             >
               ₹{(adSpend / 100).toFixed(2)}Cr+
             </div>
@@ -88,17 +88,17 @@ export function ProofBento() {
           {/* stat card 1 */}
           <div className="rounded-2xl border border-white/[0.06] p-6 lg:col-start-2 lg:row-start-1">
             <div className="mb-6 flex items-center gap-3">
-              <span className="flex h-7 w-7 items-center justify-center rounded-lg text-[#22D6EE]">
+              <span className="flex h-6 w-6 items-center justify-center rounded-lg text-[#22D6EE]">
                 <img src="/Arrow.svg" alt="" />
               </span>
-              <span className="font-manrope text-5xl font-[300] text-[#F5F7FA]">
+              <span className="font-manrope text-4xl sm:text-5xl font-[300] text-[#F5F7FA]">
                 40+
               </span>
             </div>
-            <p className="mb-8 text-lg font-manrope font-[400] text-[#F5F7FA]">
+            <p className="mb-8 text-md font-manrope font-[500] text-[#F5F7FA]">
               Brands Scaled
             </p>
-            <p className="text-[1.3rem] font-manrope font-[100]">
+            <p className="text-[1.15rem] sm:text-[1.3rem] font-manrope font-[100]">
               Across e-commerce, real estate, healthcare, and local services.
             </p>
           </div>
@@ -106,17 +106,17 @@ export function ProofBento() {
           {/* stat card 2 */}
           <div className="rounded-2xl border border-white/[0.06] p-6 lg:col-start-3 lg:row-start-1">
             <div className="mb-6 flex items-center gap-3">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg ">
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg ">
                 <img src="/Star.svg" alt="" />
               </span>
-              <span className="font-manrope text-5xl font-[300] text-[#F5F7FA]">
+              <span className="font-manrope text-4xl sm:text-5xl font-[300] text-[#F5F7FA]">
                 4.8x
               </span>
             </div>
-            <p className="mb-8 text-lg font-manrope font-[400] text-[#F5F7FA]">
+            <p className="mb-8 text-[1.15rem] sm: font-manrope font-[400] text-[#F5F7FA]">
               Average ROAS
             </p>
-            <p className="text-[1.3rem] font-manrope font-[100] text-neutral-50">
+            <p className="text-[1.15rem] sm:text-[1.3rem] font-manrope font-[100]">
               Verified across active, currently-managed ad accounts.
             </p>
           </div>
