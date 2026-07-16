@@ -4,6 +4,7 @@ import Service from "./services/page";
 import ResultsShowcase from "./result/page";
 import AboutDifferentiators from "./about/page";
 import HowWeWork from "./process/page";
+import Testimonial from "./testimonial/page";
 
 const page = () => {
   const gradientFrom = "#FF5A3C"; // Ember Coral
@@ -45,6 +46,7 @@ const page = () => {
       <ResultsShowcase />
       <AboutDifferentiators />
       <HowWeWork />
+      <Testimonial />
     </div>
   );
 };
