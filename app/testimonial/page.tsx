@@ -316,7 +316,7 @@ export default function Testimonial() {
             &ldquo;
           </span>
 
-          <p className="-mt-4 max-w-3xl font-serif text-2xl italic leading-snug text-[#F5F7FA] sm:text-[28px] lg:text-[32px]">
+          <p className="-mt-4 max-w-3xl text-2xl leading-snug text-[#F5F7FA] sm:text-[28px] lg:text-[32px]">
             Great marketing isn&apos;t about spending more. It&apos;s about
             making smarter decisions backed by data.
           </p>
@@ -326,7 +326,7 @@ export default function Testimonial() {
 
           <div className="mt-10 flex flex-col items-start justify-between gap-6 border-t border-white/[0.07] pt-8 sm:flex-row sm:items-center">
             <div>
-              <h3 className="text-xl font-semibold tracking-tight text-[#F5F7FA] sm:text-2xl">
+              <h3 className="text-xl font-[500] tracking-tight text-[#F5F7FA] sm:text-2xl">
                 Ready To Build Something That Lasts?
               </h3>
               <p className="mt-2 max-w-md text-sm text-[#8B94A3]">
