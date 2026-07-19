@@ -6,6 +6,8 @@ import localFont from "next/font/local";
 import { LenisProvider } from "@/components/providers/lenis-provider";
 import "lenis/dist/lenis.css";
 import { AmbientBackground } from "@/components/Layout/Gradient/AmbientGradient";
+import Navbar from "@/components/Layout/Navbar/Navbar";
+import { Footer } from "@/components/Layout/Footer/Footer";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -44,6 +46,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gradientFrom = "#FF5A3C"; // Ember Coral
+  const gradientTo = "#FFB020";
   return (
     <html
       suppressHydrationWarning
@@ -56,6 +60,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {/* <AmbientBackground /> */}
+
         <LenisProvider>{children}</LenisProvider>
       </body>
     </html>

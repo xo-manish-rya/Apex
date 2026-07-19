@@ -74,7 +74,6 @@ export default function HeroSection() {
       </div> */}
 
       {/* No header/nav here on purpose — that's being built separately with GSAP */}
-      <Navbar />
 
       <div className="relative isolate px-6 pt-4 overflow-hidden flex flex-col mt-32">
         <div className="mx-auto max-w-7xl pst-20 sm:pt-25">
@@ -93,7 +92,7 @@ export default function HeroSection() {
 
           <div className="text-center mt-6">
             <h1
-              className=" mx-auto max-w-6xl text-center font-neue font-[400] tracking-tight text-balance text-foregrou text-4xl leading-tig sm:text-5xl sm:leading-tig md:text-6xl md:leading-[1.0 lg:text-7xl lg:leading-no xl:text-[5em] xl:leading-[0.95]
+              className=" mx-auto max-w-6xl text-center font-neue font-[400] tracking-tight text-balance text-foregrou text-4xl leading-tig sm:text-5xl sm:leading-tight md:text-6xl md:leading-[1] lg:text-7xl lg:leading-no xl:text-[5em] xl:leading-[0.95]
   "
             >
               Building Digital Solutions That Drive Business Growth!

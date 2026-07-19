@@ -210,7 +210,7 @@ export default function Testimonial() {
   const activeTestimonial = TESTIMONIALS[center];
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden text-[#F5F7FA]">
+    <section className="relative w-full overflow-hidden text-[#F5F7FA]">
       {/* Ambient glows */}
 
       {/* <div className="grain pointer-events-none absolute inset-0" /> */}
@@ -229,7 +229,7 @@ export default function Testimonial() {
             Client Experience
           </span>
 
-          <h1 className="mt-6 text-4xl font-semibold leading-[1.06] tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-4xl font-[500] leading-[1.06] tracking-tight sm:text-5xl lg:text-6xl">
             Partnerships Built On Transparency.
           </h1>
 
@@ -305,7 +305,7 @@ export default function Testimonial() {
       </div>
 
       {/* Signature quote + CTA band */}
-      <div className="relative mx-auto max-w-7xl px-6 pb-20">
+      {/* <div className="relative mx-auto max-w-7xl px-6 pb-20">
         <div className="relative overflow-hidden rounded-[28px] border border-white/[0.07] bg-white/[0.025] px-8 py-12 sm:px-14 sm:py-16">
           <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-[#FF7A1A]/10 blur-[80px]" />
 
@@ -343,7 +343,7 @@ export default function Testimonial() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
