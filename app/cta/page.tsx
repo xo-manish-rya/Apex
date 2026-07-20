@@ -1,4 +1,4 @@
-export function CTA() {
+export default function CTA() {
   return (
     <section className="px-6 py-24 sm:px-8">
       <div className="mx-auto max-w-[1180px] overflow-hidden rounded-[28px] bg-gradient-to-br from-[#FF5A3C] to-[#ffb066] px-8 py-16 text-center sm:px-16 sm:py-20">

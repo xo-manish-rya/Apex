@@ -6,9 +6,9 @@ import AboutDifferentiators from "./about/page";
 import HowWeWork from "./process/page";
 import Testimonial from "./testimonial/page";
 import ProcessGrid from "./process/page";
-import { FAQ } from "./faq/page";
-import { CTA } from "./cta/page";
-import { Footer } from "@/components/Layout/Footer/Footer";
+import FAQ from "./faq/page";
+import CTA from "./cta/page";
+import Footer from "@/components/Layout/Footer/Footer";
 import Navbar from "@/components/Layout/Navbar/Navbar";
 
 const page = () => {

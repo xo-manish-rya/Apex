@@ -71,7 +71,7 @@ function FAQRow({
   );
 }
 
-export function FAQ() {
+export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (

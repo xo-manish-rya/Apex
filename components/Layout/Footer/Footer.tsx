@@ -12,7 +12,7 @@ const footerLinks = {
   ],
 };
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="border-t border-white/[0.08] px-6 py-16 sm:px-8">
       <div className="mx-auto max-w-[1180px]">
