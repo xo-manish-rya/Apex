@@ -7,7 +7,6 @@ import { LenisProvider } from "@/components/providers/lenis-provider";
 import "lenis/dist/lenis.css";
 import { AmbientBackground } from "@/components/Layout/Gradient/AmbientGradient";
 import Navbar from "@/components/Layout/Navbar/Navbar";
-import { Footer } from "@/components/Layout/Footer/Footer";
 
 const manrope = Manrope({
   subsets: ["latin"],
