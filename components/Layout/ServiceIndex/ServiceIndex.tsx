@@ -199,11 +199,14 @@ const ServicesIndex = () => {
   return (
     <section id="services" className="px-6 py-24 sm:px-8">
       <div className="mx-auto max-w-[1180px]">
-        <div className="mb-16 max-w-[640px]">
-          <h1 className="text-[2em] font-medium text-neutral-50 leading-12 sm:text-[3.5em]">
+        <div className="mb-16 w-full flex flex-col items-center mb-20">
+          <span className="mb-3 inline-block font-mono text-xs font-bold uppercase tracking-[0.14em] text-[#FF7A1A]">
+            Service
+          </span>
+          <h1 className="text-[2em] font-medium text-center text-neutral-50 leading-8 md:leading-12 sm:text-[3.5em]">
             Six ways we grow your revenue.
           </h1>
-          <p className="mt-8 text-base text-neutral-400">
+          <p className="mt-8 text-center text-sm md:text-base text-neutral-400">
             Every service ties back to one thing: measurable pipeline, not
             vanity metrics. Click any service to see what's actually included.
           </p>

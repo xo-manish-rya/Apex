@@ -154,14 +154,15 @@ export default function ResultsShowcase() {
   return (
     <section id="results" className="px-6 sm:py-12 md:py-14 sm:px-8">
       <div className="mx-auto max-w-[1180px]">
-        <div className="mb-4 max-w-[640px]">
-          {/* <span className="mb-3 inline-block font-mono text-xs font-bold uppercase tracking-[0.14em] text-[#22D6EE]">
+        <div className="mb-4 w-full flex flex-col items-center justify-center">
+          <span className="mb-3 inline-block font-mono text-xs font-bold uppercase tracking-[0.14em] text-[#FF7A1A]">
             Results
-          </span> */}
-          <h1 className="text-[2em] font-medium text-neutral-50 leading-12 sm:text-[3.5em]">
+          </span>
+
+          <h1 className="text-[2em] font-medium text-center text-neutral-50 leading-8 md:leading-12 sm:text-[3.5em]">
             Real outcomes, not just impressions.
           </h1>
-          <p className="mt-4 text-base text-[#8B94A3]">
+          <p className="mt-4 text-sm md:text-base text-center text-[#8B94A3]">
             A few of the results we build toward — scroll to see each one.
           </p>
         </div>

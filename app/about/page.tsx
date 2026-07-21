@@ -233,16 +233,16 @@ function DifferentiatorCard({ card }: { card: DifferentiatorCard }) {
 export default function AboutDifferentiators() {
   return (
     <section className="relative overflow-hidden px-6 py-24 sm:px-8">
-      <div className="relative mx-auto mb-16 max-w-[1180px]">
-        {/* <span className="mb-3 inline-block font-mono text-xs font-bold uppercase tracking-[0.18em] text-[#22D6EE]">
+      <div className="relative mx-auto mb-16 max-w-[1180px] flex flex-col items-center justify-center">
+        <span className="mb-3 inline-block text-center font-mono text-xs font-bold uppercase tracking-[0.18em] text-[#FF7A1A]">
           WHY CHOOSE APEX
-        </span> */}
+        </span>
 
-        <h2 className="max-w-[700px] text-4xl font-extrabold leading-tight tracking-tight text-[#F5F7FA] md:text-5xl">
-          Built For Businesses That Want Real Growth, Not Empty Promises.
+        <h2 className="max-w-[700px] text-4xl text-center font-extrabold leading-12 tracking-tight text-[#F5F7FA] md:text-5xl">
+          Built Around Performance.
         </h2>
 
-        <p className="mt-6 max-w-[620px] text-lg leading-8 text-[#8B94A3]">
+        <p className="mt-6 max-w-[620px] text-center text-lg leading-8 text-[#8B94A3]">
           Every strategy we build is driven by data, transparency, and
           measurable business growth. No recycled templates. No vanity metrics.
           Just marketing that helps your business move forward.
